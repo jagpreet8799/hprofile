@@ -22,8 +22,8 @@ jobs:
       - name: Setup SonarQube    
         uses: warchant/setup-sonar-scanner@v7
 
-      - name : SonarQube analysis
-        run: SonarScanner
+      - name : SonarQube Scan
+        run: Sonar-scanner
           -Dsonar.host.url=${{ secrets.SONAR_URL }}
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
           -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
